@@ -38,6 +38,7 @@ public class ConcurrentSkipListSetTest {
             //adds specified element in the set
             csls.add("A");
             csls.add("B");
+            csls.add("B");
 
             // returns the first element
             String s1=csls.first();
@@ -47,6 +48,7 @@ public class ConcurrentSkipListSetTest {
             String s2=csls.last();
 
             System.out.println(s2);
+            System.out.println(csls);
         }
     }
     class SubThread implements Runnable {
